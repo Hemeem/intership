@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:internship/screen/absen_screen.dart';
+import 'package:internship/screen/add_logbook_screen.dart';
 import 'package:internship/screen/edit_profile_screen.dart';
+import 'package:internship/screen/home_screen.dart';
 import 'package:intl/date_symbol_data_local.dart';
-import 'package:internship/screen/absensi_screen.dart';
-import 'package:internship/screen/beranda_screen.dart';
 import 'package:internship/screen/logbook_screen.dart';
 import 'package:internship/screen/login_page.dart';
 import 'package:internship/screen/profile_screen.dart';
@@ -29,11 +30,12 @@ class MyApp extends StatelessWidget {
         '/': (context) => SplashScreen(),
         '/login': (context) => LoginPage(),
         '/signup': (context) => SignUpPage(),
-        '/beranda': (context) => BerandaScreen(),
+        '/beranda': (context) => HomeScreen(),
         '/absensi': (context) => AbsensiScreen(),
         '/logbook': (context) => LogbookScreen(),
         '/profile': (context) => ProfileScreen(),
         '/editprofile': (context) => EditProfileScreen(),
+        '/addlogbook': (context) => AddLogbookScreen(),
       },
     );
   }

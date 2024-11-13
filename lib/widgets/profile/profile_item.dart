@@ -49,7 +49,7 @@ class ProfileItem extends StatelessWidget {
               ),
               if (isPassword)
                 IconButton(
-                  icon: Icon(Icons.refresh, color: Colors.grey),
+                  icon: Icon(Icons.visibility, color: Colors.grey),
                   onPressed: () {
                     // Handle password change action here
                   },

@@ -55,7 +55,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
             SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
-                // Implement your save functionality here
+                Navigator.pushNamed(context, '/profile');
               },
               style: ElevatedButton.styleFrom(
                 primary: Color(0xFF76C7C0),
@@ -75,7 +75,6 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
     );
   }
 
-  // Helper function to build text fields
   Widget _buildTextField(
       {required String label, required TextEditingController controller}) {
     return Padding(
